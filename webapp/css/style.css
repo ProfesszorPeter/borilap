@@ -1,0 +1,341 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+
+@font-face {
+	font-family: 'fontello';
+	src: url('../fonts/fontello.eot?63342333');
+	src: /*url('../fonts/fontello.eot?63342333#iefix') format('embedded-opentype'),
+	url('../fonts/fontello.woff2?63342333') format('woff2'),
+	url('../fonts/fontello.woff?63342333') format('woff'),
+	url('../fonts/fontello.ttf?63342333') format('truetype'),
+	url('../fonts/fontello.svg?63342333#fontello') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+
+[class^="icon-"]:before, [class*=" icon-"]:before {
+	font-family: "fontello";
+	font-style: normal;
+	font-weight: normal;
+	display: inline-block;
+	width: 13px;
+	text-align: center;
+	margin: 0 10px;
+}
+
+.icon-mail:before { content: '\e800'; } /* '' */
+.icon-at:before { content: '\e801'; } /* '' */
+.icon-home-1:before { content: '\e803'; } /* '' */
+.icon-mail-alt:before { content: '\f0e0'; } /* '' */
+.icon-facebook:before { content: '\f30c'; } /* '' */
+.icon-facebook-circled:before { content: '\f30d'; } /* '' */
+
+
+* {
+	box-sizing: border-box;
+}
+
+html {
+	height: 100%;
+	scroll-behavior: smooth;
+	scroll-padding: 40px
+}
+
+@media (max-width: 600px) {
+	html {
+	scroll-padding: 152px
+	}
+}
+
+body {
+	font: 16px raleway, sans-serif;
+	line-height: 1.5em;
+	background-image: url('../pics/hattersz.png');
+	background-attachment: fixed;
+	margin: 0 3vh;
+	height: auto
+}
+
+.flag-icon-gb {
+	background-image: url(../flags/4x3/gb.svg);
+	width: 16px;
+	height: 12px;
+	margin-left: 5px
+}
+
+.flag-icon-hu {
+	background-image: url(../flags/4x3/hu.svg);
+	width: 16px;
+	height: 12px;
+	margin-left: 5px	
+}
+
+.flag-icon-pl {
+	background-image: url(../flags/4x3/pl.svg);
+	width: 16px;
+	height: 12px;
+	margin-left: 5px
+}
+
+.flags {
+	display: flex;
+	flex-direction: row-reverse;
+	padding: 5px 0;
+}
+
+.wrapper {
+	margin: 0 auto;
+	max-width: 1400px;
+	height: 100%
+}
+
+header {
+	background-color: rgba(252,188,56,.5);
+/*	background-size: cover;*/
+	max-height: 650px;
+	max-width: 1400px;
+	box-shadow: 0 5px 10px rgba(0,0,0,.4);
+	margin-bottom: 10px
+}
+
+.headerimage {
+	display: block;
+	max-width: 100%;
+	margin: 0 auto;
+}
+
+nav {
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	justify-content: center;
+	background-color: rgba(102,0,0,.8);
+	border-bottom: 3px solid rgba(252,188,56,.8);
+	height: 40px;
+	position: sticky;
+	top: 0;
+	box-shadow: 0px 5px 10px rgba(0,0,0,.4);
+	z-index: 100;
+}
+
+@media (max-width: 600px) {
+	nav {
+		display: flex;
+		flex-direction: column;
+		height: auto;
+		align-items: center;
+		justify-content: center;
+		padding-bottom: 5px
+	}
+}
+
+nav a {
+	display: block;
+	text-align: left;
+	text-decoration: none;
+	padding: 0 15px;
+	color: rgba(252,188,56,1);
+	font: 16px raleway, sans;
+}
+
+nav a:hover {
+	color: rgba(255,255,255,1);
+	transition: color 0.3s, background 0.3s;
+}
+
+@media (max-width: 600px) {
+	nav a {
+		padding: 5px;
+		font-size: 13px
+	}
+}
+
+/*.w3-animate-left{
+	position: relative;
+	animation: animateleft 2s linear
+}
+	@keyframes animateleft{
+		0%{ left:-120%; opacity:0 } 
+		50%{ left:0; opacity:1 }
+		100%{ left:0; opacity:1 }
+	}
+*/
+main {
+	display: flex;
+	flex-direction: column;
+	flex-wrap: wrap;
+	align-items: center;
+	justify-content: center;
+	margin: 0 auto;
+}
+
+.mainbox {
+	position: relative;
+	text-align: center;
+	margin: 0 auto 5px auto;
+}
+
+.mainbox img {
+	box-shadow: 0 5px 10px rgba(0,0,0,.4);
+
+}
+
+/*	
+.mainbox-animation {
+	animation: animateleft 2s linear;
+}*/
+
+.bevezeto {
+	display: block;
+	position: absolute;
+	float: left;
+	top: 50%;
+	left: 2%;
+	max-width: 38%;
+	color: white;
+	text-align: center;
+	transform: translateY(-50%);
+}
+
+h1 {
+	text-align: center;
+	font-weight: bold;
+	color: rgba(252,188,56,.8);
+	margin-top: 0
+}
+
+.blogbevezeto {
+	display: block;
+	position: absolute;
+	float: left;
+	top: 50%;
+	left: 2%;
+	max-width: 35%;
+	color: black;
+	text-align: center;
+	transform: translateY(-50%);
+}
+
+.blogbevezeto h1 {
+	text-align: center;
+	font-weight: bold;
+	color: rgba(102,0,0,.8);
+	margin-top: 0
+}
+
+.mblink {
+	font-size: 1.3em;
+	text-decoration: none;
+	color: rgba(252,188,56,1);
+}
+
+.mblinkbl {
+	font-size: 1.3em;
+	text-decoration: none;
+	color: rgba(102,0,0,1);
+}
+
+footer {
+	display: flex;
+	flex-direction: column;
+	flex-wrap: wrap;
+	align-items: center;
+	justify-content: center;
+	background-color: rgba(102,0,0,.8);
+	border-top: 3px solid rgba(252,188,56,.8);
+/*	max-height: 400px;*/
+	height: auto;
+	box-shadow: 0px -5px 10px rgba(0,0,0,.4);
+	max-width: 1400px;
+	font: 1.25em raleway, sans;
+}
+
+footer a {
+	display: block;
+	text-align: center;
+	text-decoration: none;
+	color: rgba(252,188,56,1);
+}
+
+footer img {
+	display: block;
+	max-height: 240px;
+	margin: 10px auto 5px auto;
+}
+
+.copyright {
+	display: flex;
+	text-align: center;
+	align-items: center;
+	justify-content: center;
+	color: rgba(234,197,30,1);
+	font-size: 13px;
+	border-top: 1px solid rgba(252,188,56,.4);
+	width: 100%;
+	height: auto;
+	margin-top: 5px
+}
+
+.copyright p {
+		padding: 0 10px;
+
+}
+
+@media (max-width: 600px) {
+	.copyright {
+		height: auto;
+		flex-direction: column
+	}
+	.social {
+		height: auto;
+		padding: 0 0 5px 0
+	}
+}
+
+footer a:hover {
+	color: rgb(255,255,255);
+	transition: color 0.3s;
+}
+
+.social {
+	display: flex;
+	justify-content: center;
+	height: auto;
+	padding: 10px 0;
+	border-bottom: 1px solid rgba(252,188,56,.4);
+	width: 100%;
+}
+
+.cookie-container {
+	position: fixed;
+	bottom: -100%;
+	left: 0;
+	right: 0;
+	background: rgba(0,0,0,.9);
+	color: white;
+	text-align: center;
+	justify-content: center;
+	transition: 400ms
+}
+
+.cookie-container.active {
+	bottom: 0;
+}
+
+.cookie-container a {
+	color: white;
+}
+
+.cookie-button {
+	background: rgba(252,188,56,1);
+	border: 0;
+	color: rgba(102,0,0,1);
+	padding: 5px 5px;
+	margin-left: 20px;
+	border-radius: 4px;
+	cursor: pointer 
+}
+
+.cumi {
+	font-size: 70px;
+	line-height: 1.5em
+}
