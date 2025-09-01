@@ -1,0 +1,7 @@
+services:
+  borilap:
+    image: nginxbori:1.0
+    ports:
+      - 80
+    volumes:
+        - /home/peter/development/web/Borilap/webapp:/usr/share/nginx/html
