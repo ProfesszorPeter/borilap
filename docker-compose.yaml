@@ -2,6 +2,6 @@ services:
   borilap:
     image: nginxbori:1.0
     ports:
-      - 8081
+      - 8081:8081
     volumes:
-        - /home/peter/development/web/Borilap/webapp:/usr/share/nginx/html
+        - /home/peter/development/web/borilap/webapp:/usr/share/nginx/html
